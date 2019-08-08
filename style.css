@@ -21,8 +21,7 @@ html {
  */
 
 body {
-  margin: 1rem;
-
+  margin: 0;
 }
 
 /**
@@ -30,6 +29,9 @@ body {
  */
 
 main {
+  margin-left: 2rem;
+  margin-right: 2rem;
+
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -359,11 +361,17 @@ nav {
   align-items: center;
   display: flex;
   height: 10vh;
+  width: 100%;
 }
 
 a {
   background-color: transparent;
   text-decoration: none;
+  color: #9048db;
+}
+
+a.text-link:hover {
+  text-decoration: underline;
 }
 img {
   display: inline-block;
@@ -373,8 +381,8 @@ img {
 }
 
 ul {
-  margin-block-start: 1em;
-  margin-block-end: 1em;
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   padding-inline-start: 40px;
@@ -383,7 +391,9 @@ li {
   display: list-item;
   text-align: -webkit-match-parent;
 }
-
+.text {
+  margin-top: 2rem;
+}
 .bg-primary {
   background-color: #ffffff;
   color: #000;
@@ -404,20 +414,19 @@ li {
   list-style: none;
 }
 .social-links.social-links-circles {
-  margin-top: 48px;
+  margin-top: 2rem;
   margin-bottom: 0px;
   padding-left: 0px;
 }
 .social-links {
   display: flex;
-  margin-right: -12px;
-  margin-left: -12px;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .social-link {
-  margin-right: 12px;
-  margin-left: 12px;
+  margin: 0.75rem;
   opacity: 0.5;
   -webkit-transition: opacity 200ms ease;
   transition: opacity 200ms ease;
